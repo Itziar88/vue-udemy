@@ -17,6 +17,7 @@
   import Servers from '../components/Task7Files/Task7_Servers.vue';
   import ServerDetails from '../components/Task7Files/Task7_ServerDetails.vue';
 export default {
+  name: 'Task7',
   components: {
     appHeader: Header, Servers,
     'app-server-details': ServerDetails,
