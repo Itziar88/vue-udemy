@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 
 Vue.config.productionTip = false
+export const serverBus = new Vue();
 export const eventBus = new Vue({
   methods: {
     changeAge(age){

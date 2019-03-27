@@ -25,7 +25,8 @@
     <!-- <Class75 /> -->
     <!-- <Class95 /> -->
     <!-- <Task6 /> -->
-    <Class104 />
+    <!-- <Class104 /> -->
+    <Task7 />
   </div>
 </template>
 
@@ -55,6 +56,7 @@ import Class75 from './components/Class75.vue'
 import Class95 from './components/Class95.vue'
 import Task6 from './components/Task6.vue'
 import Class104 from './components/Class104.vue'
+import Task7 from './components/Task7.vue'
 
 export default {
   name: 'app',
@@ -83,7 +85,8 @@ export default {
     Class75,
     Class95,
     Task6,
-    Class104
+    Class104,
+    Task7
   }
 }
 </script>
