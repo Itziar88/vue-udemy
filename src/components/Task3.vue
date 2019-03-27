@@ -11,7 +11,7 @@
     <!-- 2) Watch for changes in the "result" and reset the "value" after 5 seconds (hint: setTimeout(..., 5000) -->
     <div>
         <input type="text">
-        <p>{{ value }}</p>
+        <p>{{ value  }}</p>
     </div>
   </div>
 </template>
