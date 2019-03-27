@@ -19,8 +19,11 @@ export default {
 
 <style>
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
-  div.component{
+  div .component{
     border: 1px solid black;
     padding: 30px;
+  }
+  .container{
+    text-align: left;
   }
 </style>
