@@ -32,7 +32,8 @@
     <!-- <Project2 /> -->
     <!-- <Class145 /> -->
     <!-- <Task9 /> -->
-    <Class171 />
+    <!-- <Class171 /> -->
+    <Class174 />
   </div>
 </template>
 
@@ -69,6 +70,7 @@ import Project2 from './components/Project2.vue'
 import Class145 from './components/Class145.vue'
 import Task9 from './components/Task9.vue'
 import Class171 from './components/Class171.vue'
+import Class174 from './components/Class174.vue'
 
 export default {
   name: 'app',
@@ -104,7 +106,8 @@ export default {
     Project2,
     Class145,
     Task9,
-    Class171
+    Class171,
+    Class174
   }
 }
 </script>
