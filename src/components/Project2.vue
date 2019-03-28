@@ -54,7 +54,7 @@
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Arizonia');
-@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+/* @import url('https://fonts.googleapis.com/css?family=Arizonia'); */
+/* @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"); */
 
 </style>
