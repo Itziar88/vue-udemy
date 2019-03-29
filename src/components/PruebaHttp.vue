@@ -3,29 +3,6 @@
     <div class="row">
       <div class="col-xs-12 col-sm-8 col-smoffset-2 col-md-6 col-md-offset-3">
         <h1>Http</h1>
-        <div class="form-group">
-          <label>Username</label>
-          <input
-            class="form-control"
-            type="text"
-            v-model="user.username"
-          >
-        </div>
-        <div class="form-group">
-          <label>Username</label>
-          <input
-            class="form-control"
-            type="text"
-            v-model="user.email"
-          >
-        </div>
-        <button
-          class="btn btn-primary"
-          @click="submit"
-        >
-          Submit
-        </button>
-        <hr>
         <input
           class="form-control"
           type="text"
@@ -48,6 +25,9 @@
             {{ u.username }} - {{ u.email }}
           </li>
         </ul>
+        <button @click="conseguirDatos">
+          Prueba
+        </button>
       </div>
     </div>
   </div>
@@ -55,29 +35,13 @@
 
 <script>
 export default {
-  name: 'Class212',
+  name: 'PruebaHttp',
   data(){
     return{
-      user: {
-        username: '',
-        email: ''
-      },
-      users: [],
-      resource: {},
-      node: 'data'
+      blogs:[]
     };
   },
   methods:{
-    submit(){
-      // this.$http.post('data.json', this.user)
-      //   .then(response => {
-      //     console.log(response);
-      //   }, error => {
-      //     console.log(error);
-      //   });
-      // this.resource.save({}, this.user);
-      this.resource.saveAlt(this.user);
-    },
     fetchData(){
     //   this.$http.get('data.json')
     //     .then(response => {
@@ -104,11 +68,14 @@ export default {
     }
   },
   created(){
-    const customActions = {
-      saveAlt: {method: 'POST', url: 'alternative.json'},
-      getData: {method: 'GET'}
-    };
-    this.resource = this.$resource('{node}.json', {}, customActions);
+    // const customActions = {
+    //   getData: {method: 'GET'}
+    // };
+    // this.resource = this.$resource('{node}.json', {}, customActions);
+    this.$http.get('https://jsonplaceholder.typicode.com/posts').then(function(data){
+      console.log(data);
+      this.blogs = data.body.slice(0, 10);
+    })
   }
 }
 </script>

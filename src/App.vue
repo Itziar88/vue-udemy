@@ -35,7 +35,8 @@
     <!-- <Class171 /> -->
     <!-- <Class174 /> -->
     <!-- <Task11 /> -->
-    <Class212 />
+    <!-- <Class212 /> -->
+    <PruebaHttp />
   </div>
 </template>
 
@@ -75,6 +76,7 @@ import Class171 from './components/Class171.vue'
 import Class174 from './components/Class174.vue'
 import Task11 from './components/Task11.vue'
 import Class212 from './components/Class212.vue'
+import PruebaHttp from './components/PruebaHttp.vue'
 
 export default {
   name: 'app',
@@ -113,7 +115,8 @@ export default {
     Class171,
     Class174,
     Task11,
-    Class212
+    Class212,
+    PruebaHttp
   }
 }
 </script>

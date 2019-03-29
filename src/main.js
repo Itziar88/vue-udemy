@@ -4,15 +4,15 @@ import App from './App.vue'
 
 Vue.use(VueResource);
 Vue.http.options.root = 'https://vuejs-http-e3147.firebaseio.com/';
-Vue.http.interceptors.push((request, next) => {
-  console.log(request);
-  if(request.method == 'POST'){
-    request.method = 'PUT';
-  }
-  next(response => {
-    response.json = () => {return {messages: response.body}}
-  });
-});
+// Vue.http.interceptors.push((request, next) => {
+//   //console.log(request);
+//   if(request.method == 'POST'){
+//     request.method = 'PUT';
+//   }
+//   next(response => {
+//     response.json = () => {return {messages: response.body}}
+//   });
+// });
 
 Vue.config.productionTip = false
 //Filter para Task11
