@@ -35,7 +35,7 @@
     <!-- <Class171 /> -->
     <!-- <Class174 /> -->
     <!-- <Task11 /> -->
-    <!-- <Class212 /> -->
+    <Class212 />
     <PruebaHttp />
   </div>
 </template>

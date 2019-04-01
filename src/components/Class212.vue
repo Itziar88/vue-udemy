@@ -64,7 +64,7 @@ export default {
       },
       users: [],
       resource: {},
-      node: 'data'
+      node: 'alternative'
     };
   },
   methods:{
