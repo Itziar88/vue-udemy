@@ -2,7 +2,7 @@
     <div class="row">
         <app-quote
             v-for="(quote, index) in quotes"
-            :key="quote"
+            :key="index"
             @click.native="deleteQuote(index)"
         >
         {{ quote }}

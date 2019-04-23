@@ -35,8 +35,10 @@
     <!-- <Class171 /> -->
     <!-- <Class174 /> -->
     <!-- <Task11 /> -->
-    <Class212 />
-    <PruebaHttp />
+    <!-- <Class212 /> -->
+    <!-- <PruebaHttp /> -->
+    <!-- <Class255 /> -->
+    <Class255_NoNamespace />
   </div>
 </template>
 
@@ -77,6 +79,8 @@ import Class174 from './components/Class174.vue'
 import Task11 from './components/Task11.vue'
 import Class212 from './components/Class212.vue'
 import PruebaHttp from './components/PruebaHttp.vue'
+import Class255 from './components/Class255.vue'
+import Class255_NoNamespace from './components/Class255_NoNamespace.vue'
 
 export default {
   name: 'app',
@@ -116,7 +120,9 @@ export default {
     Class174,
     Task11,
     Class212,
-    PruebaHttp
+    PruebaHttp,
+    Class255,
+    Class255_NoNamespace
   }
 }
 </script>

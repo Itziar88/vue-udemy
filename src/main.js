@@ -2,6 +2,9 @@ import Vue from 'vue'
 import VueResource from 'vue-resource';
 import App from './App.vue'
 
+//import { store } from './store/store';
+import { store } from './store(NoNamespace)/store(NoNamespace)';
+
 Vue.use(VueResource);
 Vue.http.options.root = 'https://vuejs-http-e3147.firebaseio.com/';
 // Vue.http.interceptors.push((request, next) => {
@@ -30,5 +33,6 @@ export const eventBus = new Vue({
 });
 
 new Vue({
+  store,
   render: h => h(App),
 }).$mount('#app')
